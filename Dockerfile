@@ -8,7 +8,7 @@ RUN apt-get update && \
     mkdir /var/run/sshd
 
 # Create a user with password
-RUN useradd -m docker && echo "docker:docker" | chpasswd && \
+RUN echo "root:root" | chpasswd && \
     echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config && \
     echo 'PasswordAuthentication yes' >> /etc/ssh/sshd_config
 
