@@ -8,7 +8,6 @@ A minimal development container with SSH access over Ngrok. Useful for remote ac
 
 - Ubuntu 20.04 base
 - SSH server running
-- Dev tools pre-installed (Git, Curl, Vim, Build tools)
 - Password login (can be upgraded to SSH key)
 - Compatible with host Ngrok tunnel
 
@@ -26,6 +25,8 @@ docker-compose up --build -d
 
 ### 2. Start Ngrok tunnel
 
+Install Ngrok from [Ngrok](https://ngrok.com)
+
 ```bash
 ngrok tcp 2222
 ```
@@ -39,10 +40,10 @@ tcp://0.tcp.ngrok.io:12345
 ### 3. SSH into the container
 
 ```bash
-ssh docker@0.tcp.ngrok.io -p 12345
+ssh root@0.tcp.ngrok.io -p 12345
 ```
 
-Password: `docker`
+Password: `root`
 
 ---
 
@@ -56,6 +57,8 @@ Password: `docker`
 
 ## 🧠 Notes
 
-- Default user: `docker`
-- Default password: `docker`
+- Default user: `root`
+- Default password: `root`
 - Runs on port `2222` locally
+
+Made by [@justmalhar](www.x.com/justmalhar)
