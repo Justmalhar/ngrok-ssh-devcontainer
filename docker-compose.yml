@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ssh-devcontainer:
+    build: .
+    container_name: ssh-devcontainer
+    ports:
+      - "2222:22"
+    restart: unless-stopped
