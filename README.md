@@ -18,7 +18,7 @@ A minimal development container with SSH access over Ngrok. Useful for remote ac
 ### 1. Clone and build
 
 ```bash
-git clone https://github.com/yourname/ssh-devcontainer.git
+git clone https://github.com/justmalhar/ssh-devcontainer.git
 cd ssh-devcontainer
 docker-compose up --build -d
 ```
